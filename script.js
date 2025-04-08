@@ -5,7 +5,7 @@ window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
 
     header.classList.toggle('fade', scrollPosition > 100);
-    hero.classList.toggle('fade', scrollPosition > 200); // Hero fades slightly later
+    hero.classList.toggle('fade', scrollPosition > 200);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
