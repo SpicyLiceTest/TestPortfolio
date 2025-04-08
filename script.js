@@ -1,13 +1,9 @@
-// Fade out header on scroll
+// Header fade on scroll
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
-    if (window.scrollY > 50) {
-        header.classList.add('fade-out');
-    } else {
-        header.classList.remove('fade-out');
-    }
+    header.classList.toggle('fade', window.scrollY > 100);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Portfolio loaded successfully!");
+    console.log("Portfolio loaded!");
 });
