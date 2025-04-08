@@ -1,11 +1,11 @@
-// Fade header and hero on scroll
+// Fade hero (header, image, and caption) on scroll
 window.addEventListener('scroll', () => {
-    const header = document.getElementById('header');
     const hero = document.getElementById('hero');
+    const heroHeight = hero.offsetHeight;
     const scrollPosition = window.scrollY;
 
-    header.classList.toggle('fade', scrollPosition > 100);
-    hero.classList.toggle('fade', scrollPosition > 200);
+    // Fade out when scrolling past the hero section
+    hero.classList.toggle('fade', scrollPosition > heroHeight);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
