@@ -1,11 +1,11 @@
-// Fade hero (header, image, and caption) on scroll
+// Fade top section (header + hero) on scroll
 window.addEventListener('scroll', () => {
-    const hero = document.getElementById('hero');
-    const heroHeight = hero.offsetHeight;
+    const topSection = document.getElementById('top-section');
     const scrollPosition = window.scrollY;
+    const imageHeight = document.querySelector('.profile-img').offsetHeight;
 
-    // Fade out when scrolling past the hero section
-    hero.classList.toggle('fade', scrollPosition > heroHeight);
+    // Fade out when scroll position exceeds the image height
+    topSection.classList.toggle('fade', scrollPosition > imageHeight + 50); // +50 for buffer
 });
 
 document.addEventListener('DOMContentLoaded', () => {
