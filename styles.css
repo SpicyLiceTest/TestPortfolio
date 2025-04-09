@@ -24,11 +24,11 @@ body {
     padding-top: 1.5rem;
     background: transparent;
     z-index: 100;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease; /* Ensures smooth fade */
 }
 
 #header.fade {
-    opacity: 0;
+    opacity: 0; /* Fades out when scrolling */
 }
 
 .header-box {
