@@ -4,7 +4,7 @@ window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
 
     // Fade out header when scrolling past 300px (image height)
-    header.classList.toggle('fade', scrollPosition > 300);
+    header.classList.toggle('fade', scrollPosition > 100);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
